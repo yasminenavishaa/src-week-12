@@ -304,3 +304,106 @@ Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restar
 * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
 
     Jawab: ![Alt text](imagess/image45.png)
+
+## Praktikum 8: Navigation route dengan Future Function
+
+### Langkah 1: Buat file baru navigation_first.dart
+Buatlah file baru ini di project lib Anda.
+
+![Alt text](imagess/image52.png)
+
+### Langkah 2: Isi kode navigation_first.dart
+![Alt text](imagess/image46.png)
+
+**Soal 15**
+* Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+    Jawab: 
+    
+    ![Alt text](imagess/image47.png)
+
+* Silakan ganti dengan warna tema favorit Anda.
+
+    Jawab: 
+    
+    ![Alt text](imagess/image50.png)
+
+## Langkah 3: Tambah method di class _NavigationFirstState
+Tambahkan method ini.
+
+![Alt text](imagess/image51.png)
+
+## Langkah 4: Buat file baru navigation_second.dart
+Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view menjadi satu folder dan sesuaikan impor yang dibutuhkan.
+
+![Alt text](imagess/image57.png)
+
+## Langkah 5: Buat class NavigationSecond dengan StatefulWidget
+![Alt text](imagess/image54.png)
+
+## Langkah 6: Edit main.dart
+Lakukan edit properti home.
+
+![Alt text](imagess/image55.png)
+
+## Langkah 8: Run
+Lakukan run, jika terjadi error silakan diperbaiki.
+
+**Soal 16**
+* Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+    
+* Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+
+    Jawab:
+
+    ![Alt text](imagess/image56.png)
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+
+Hasilnya akan seperti gambar berikut ini.
+
+![Alt text](imagess/image59.png)
+
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+
+### Langkah 1: Buat file baru navigation_dialog.dart
+Buat file dart baru di folder lib project Anda.
+
+![Alt text](imagess/image58.png)
+
+### Langkah 2: Isi kode navigation_dialog.dart
+![Alt text](imagess/image60.png)
+
+### Langkah 3: Tambah method async
+![Alt text](imagess/image61.png)
+
+### Langkah 4: Panggil method di ElevatedButton
+![Alt text](imagess/image63.png)
+
+### Langkah 5: Edit main.dart
+Ubah properti home
+
+![Alt text](imagess/image62.png)
+
+### Langkah 6: Run
+Coba ganti warna background dengan widget dialog tersebut. Jika terjadi error, silakan diperbaiki. Jika berhasil, akan tampil seperti gambar berikut.
+
+![Alt text](imagess/image64.png)
+
+![Alt text](imagess/image65.png)
+
+**Soal 17**
+* Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+* Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+
+    Jawab: 
+
+    ![Alt text](imagess/image65.png)
+
+    ![Alt text](imagess/image66.png)
+
+    ![Alt text](imagess/image67.png)
+
+    ![Alt text](imagess/image68.png)
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".

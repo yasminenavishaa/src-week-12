@@ -196,3 +196,64 @@ Tambahkan kode ini di dalam class _FutureStatePage
 * Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
     Jawab: Perbedaan kode langkah 1 dan kode langkah 4 adalah pada penanganan error. Pada langkah 1, method returnError() tidak menangani error yang terjadi. Jika error terjadi, maka method tersebut akan berhenti dan tidak mengembalikan nilai apa pun. Sedangkan pada langkah 4, method handleError() menangani error yang terjadi dengan menggunakan try-catch-finally. 
+
+## Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+### Langkah 1: install plugin geolocator
+Tambahkan plugin geolocator dengan mengetik perintah berikut di terminal.
+
+![Alt text](imagess/image27.png)
+
+### Langkah 2: Tambah permission GPS
+Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut di file android/app/src/main/androidmanifest.xml
+
+![Alt text](imagess/image28.png)
+
+### Langkah 3: Buat file geolocation.dart
+Tambahkan file baru ini di folder lib project Anda.
+
+![Alt text](imagess/image29.png)
+
+### Langkah 4: Buat StatefulWidget
+Buat class LocationScreen di dalam file geolocation.dart
+
+![Alt text](imagess/image30.png)
+
+### Langkah 5: Isi kode geolocation.dart
+
+![Alt text](imagess/image31.png)
+
+![Alt text](imagess/image32.png)
+
+**Soal 11**
+* Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+
+    ![Alt text](imagess/image33.png)
+
+### Langkah 6: Edit main.dart
+Panggil screen baru tersebut di file main Anda seperti berikut.
+
+![Alt text](imagess/image34.png)
+
+![Alt text](imagess/image35.png)
+
+### Langkah 7: Run
+Run project Anda di device atau emulator (bukan browser), maka akan tampil seperti berikut ini.
+
+![Alt text](imagess/image36.png)
+
+### Langkah 8: Tambahkan animasi loading
+Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan perubahannya.
+
+![Alt text](imagess/image37.png)
+
+**Soal 12**
+* Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
+
+    ![Alt text](imagess/image38.png)
+
+* Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
+    Jawab: Karena package geolocator juga support di browser, sehingga koordinat GPS juga bisa didapatkan pada browser, beserta izinnya.
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".

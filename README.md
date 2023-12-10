@@ -170,3 +170,29 @@ Anda dapat menggunakan FutureGroup dengan Future.wait seperti kode berikut.
 
 ### Langkah 1: Buka file main.dart
 Tambahkan method ini ke dalam class _FuturePageState
+
+![Alt text](imagess/image23.png)
+
+### Langkah 2: ElevatedButton
+Ganti dengan kode berikut
+
+![Alt text](imagess/image24.png)
+
+### Langkah 3: Run
+Lakukan run dan klik tombol GO! maka akan menghasilkan seperti gambar berikut.
+
+![Alt text](imagess/image25.png)
+
+**Soal 9**
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+
+### Langkah 4: Tambah method handleError()
+Tambahkan kode ini di dalam class _FutureStatePage
+
+![Alt text](imagess/image26.png)
+
+**Soal 10**
+* Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+    Jawab: Perbedaan kode langkah 1 dan kode langkah 4 adalah pada penanganan error. Pada langkah 1, method returnError() tidak menangani error yang terjadi. Jika error terjadi, maka method tersebut akan berhenti dan tidak mengembalikan nilai apa pun. Sedangkan pada langkah 4, method handleError() menangani error yang terjadi dengan menggunakan try-catch-finally. 

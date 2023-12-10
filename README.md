@@ -257,3 +257,50 @@ Tambahkan widget loading seperti kode berikut. Lalu hot restart, perhatikan peru
     Jawab: Karena package geolocator juga support di browser, sehingga koordinat GPS juga bisa didapatkan pada browser, beserta izinnya.
 
 * Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
+
+## Praktikum 7: Manajemen Future dengan FutureBuilder
+
+### Langkah 1: Modifikasi method getPosition()
+Buka file geolocation.dart kemudian ganti isi method dengan kode ini.
+
+![Alt text](imagess/image39.png)
+
+### Langkah 2: Tambah variabel
+Tambah variabel ini di class _LocationScreenState
+
+![Alt text](imagess/image40.png)
+
+### Langkah 3: Tambah initState()
+Tambah method ini dan set variabel position
+
+![Alt text](imagess/image41.png)
+
+### Langkah 4: Edit method build()
+Ketik kode berikut dan sesuaikan. Kode lama bisa Anda comment atau hapus.
+
+![Alt text](image42.png)
+
+**Soal 13**
+* Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
+    Jawab: Perbedaannya terletak pada kasus pertama, setState digunakan untuk memperbarui variabel state myPosition. Sedangkan pada kasus kedua, FutureBuilder digunakan untuk mengelola pembaruan UI secara otomatis. Namun pada akhirnya, hasil tampilan UI terlihat sama karena keduanya memiliki penundaan yang sama, yakni 3 detik.
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+
+    Jawab: ![Alt text](imagess/image43.png)
+
+* Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+### Langkah 5: Tambah handling error
+Tambahkan kode berikut untuk menangani ketika terjadi error. Kemudian hot restart.
+
+![Alt text](imagess/image44.png)
+
+**Soal 14**
+* Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+
+    Jawab: Langkah ini tidak mengubah tampilan UI. Hal ini karena langkah ini hanya menambahkan fungsi handleError() yang akan dijalankan jika terjadi kesalahan.
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+
+    Jawab: ![Alt text](imagess/image45.png)

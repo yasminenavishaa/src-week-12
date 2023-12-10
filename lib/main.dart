@@ -46,7 +46,7 @@ class _FuturePageState extends State<FuturePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Back from the Future - Yasmine'),
+        title: const Text(' Yasmine Navisha '),
       ),
       body: Center(
         child: Column(

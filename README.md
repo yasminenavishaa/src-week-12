@@ -60,3 +60,25 @@ Jawab:
 ![Alt text](imagess/image7.png)
 
 ![Alt text](imagess/image8.png)
+
+## Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+### Langkah 1: Buka file main.dart
+Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
+
+![Alt text](imagess/image9.png)
+
+### Langkah 2: Tambah method count()
+Lalu tambahkan lagi method ini di bawah ketiga method sebelumnya.
+
+![Alt text](imagess/image10.png)
+
+### Langkah 3: Panggil count()
+Lakukan comment kode sebelumnya, ubah isi kode onPressed() menjadi seperti berikut.
+
+![Alt text](imagess/image11.png)
+
+### Langkah 4: Run
+Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat seperti gambar berikut, hasil angka 6 akan tampil setelah delay 9 detik.
+
+![Alt text](imagess/image12.png)

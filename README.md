@@ -82,3 +82,58 @@ Lakukan comment kode sebelumnya, ubah isi kode onPressed() menjadi seperti berik
 Akhirnya, run atau tekan F5 jika aplikasi belum running. Maka Anda akan melihat seperti gambar berikut, hasil angka 6 akan tampil setelah delay 9 detik.
 
 ![Alt text](imagess/image12.png)
+
+**Soal 4**
+* Jelaskan maksud kode langkah 1 dan 2 tersebut!
+
+    Jawab: Merupakan kode Dart yang terdiri dari tiga fungsi asynchronous, yaitu returnOneAsync(), returnTwoAsync(), dan returnThreeAsync(). Ketiga fungsi ini mengembalikan nilai int dan menggunakan Future.delayed() untuk menunda eksekusi selama 3 detik.
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
+
+## Praktikum 3: Menggunakan Completer di Future
+
+### Langkah 1: Buka main.dart
+Pastikan telah impor package async berikut.
+
+![Alt text](imagess/image13.png)
+
+### Langkah 2: Tambahkan variabel dan method
+Tambahkan variabel late dan method di class _FuturePageState seperti ini.
+
+![Alt text](imagess/image14.png)
+
+### Langkah 3: Ganti isi kode onPressed()
+Tambahkan kode berikut pada fungsi onPressed(). Kode sebelumnya bisa Anda comment.
+
+![Alt text](imagess/image15.png)
+
+**Soal 5**
+* Jelaskan maksud kode langkah 2 tersebut!
+
+    Jawab :
+    1. Variabel completer Variabel completer adalah variabel late dari tipe Completer. Variabel ini digunakan untuk menyimpan hasil dari perhitungan angka 42.
+    2. Method getNumber() Method getNumber() mengembalikan nilai dari variabel completer. Method ini memiliki dua langkah: a. Inisialisasi variabel completer dengan nilai baru. b. Memanggil method calculate() untuk menghitung angka 42.
+    3. Method calculate() Method calculate() menggunakan Future.delayed() untuk menunggu 5 detik sebelum menyelesaikan perhitungan angka 42. Setelah 5 detik, method ini akan memanggil method completer.complete() untuk menyelesaikan perhitungan dan mengembalikan nilai 42 ke variabel completer
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+![Alt text](imagess/image16.png)
+
+### Langkah 5: Ganti method calculate()
+Gantilah isi code method calculate() seperti kode berikut, atau Anda dapat membuat calculate2()
+
+![Alt text](imagess/image17.png)
+
+### Langkah 6: Pindah ke onPressed()
+Ganti menjadi kode seperti berikut.
+
+![Alt text](imagess/image18.png)
+
+**Soal 6**
+* Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+    Jawab: Langkah 5 Pada langkah 5, kita mengganti isi dari method calculate(). Method calculate() sebelumnya menggunakan await Future.delayed(const Duration(seconds: 5)); untuk menunggu 5 detik sebelum menyelesaikan perhitungan angka 42. Pada langkah 6, kita mengganti kode di method onPressed(). Kode ini menggunakan then() dan catchError() untuk menangani hasil dari method getNumber(). Jika tidak terjadi kesalahan, maka method ini akan memanggil method setState() untuk memperbarui state dari widget. Jika terjadi kesalahan, maka method ini akan memanggil method setState() untuk memperbarui state dari widget dan menampilkan pesan kesalahan.
+
+* Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+
+
+
